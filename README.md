@@ -1,22 +1,43 @@
 > **Note:** Please **fork** the current Udacity repository so that you have a **remote** repository under **your** GitHub account. Clone this remote repository to your local machine. Later, as part of the project "Post your Work on Github," you will push your proposed changes to your remote repository.
 
-### Date Created
-Add the date when you created this project and the README file.
+---
 
-### Project Title
-Replace with your project's actual title.
+# Bikeshare Data Analysis Project
 
-### Description
-Provide a clear description of what your project is about and what it does.
+## Date Created
+June 20, 2025
 
-### Files Used
-List all the files you used in your project.
+## Project Title
+Bikeshare Data Exploration with Python
 
-### Installation Instructions
-Add a section that explains how to set up and run your project locally.
+## Description
+This project allows users to explore data related to bike share systems in three major U.S. cities: Chicago, New York City, and Washington, D.C.
 
-### Usage
-Include examples or instructions on how to use your project.
+The script is interactive: it asks the user to select a city and specify filters such as month and day. It then calculates and displays statistics on:
 
-### Credits
-Properly credit any repositories, tutorials, or blog posts that inspired or helped you in your project by adding their links.
+- Most frequent times of travel
+- Most popular stations and trips
+- Trip duration
+- User demographics (gender, birth year, etc.)
+- Raw data if requested
+
+This project is part of the Udacity Data Science Nanodegree.
+
+## Files Used
+- `bikeshare.py`: The main Python script that runs the program.
+- `chicago.csv`: Dataset for Chicago bikeshare.
+- `new_york_city.csv`: Dataset for New York City bikeshare.
+- `washington.csv`: Dataset for Washington D.C. bikeshare.
+- `README.md`: This documentation file.
+
+## Software Required
+- Python 3.x
+- pandas
+- numpy
+- time
+- os
+
+To install the required libraries:
+
+```bash
+pip install pandas numpy
