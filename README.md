@@ -12,5 +12,11 @@ Provide a clear description of what your project is about and what it does.
 ### Files Used
 List all the files you used in your project.
 
+### Installation Instructions
+Add a section that explains how to set up and run your project locally.
+
+### Usage
+Include examples or instructions on how to use your project.
+
 ### Credits
 Properly credit any repositories, tutorials, or blog posts that inspired or helped you in your project by adding their links.
