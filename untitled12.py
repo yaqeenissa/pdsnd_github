@@ -139,21 +139,24 @@ def station_stats(df):
 
 # station_stats(df)
 
-def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
 
+def trip_duration_stats(df: pd.DataFrame) -> None:
+    """Displays statistics on the total and average trip duration.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing bikeshare data with 'Trip Duration' column.
+    """
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
+    # Use pandas built-in methods for sum and mean
+    total_duration = df['Trip Duration'].sum()
+    mean_duration = df['Trip Duration'].mean()
 
-    # Solution 2: Using numpy methods
-    total_duration = np.sum(df['Trip Duration'])
-    mean_duration = np.mean(df['Trip Duration'])
+    print(f'Total Travel Time: {total_duration}')
+    print(f'Mean Travel Time: {mean_duration:.2f}')
 
-    print('Total Travel Time (numpy):', total_duration)
-    print('Mean Travel Time (numpy):', mean_duration)
-
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print(f"\nThis took {time.time() - start_time:.4f} seconds.")
     print('-'*40)
 
 # trip_duration_stats(df)
